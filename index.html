@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="https://miro.medium.com/max/512/1*Syzc_BbO0QHTx74NLHcpiQ.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="banner winner">
+        <div class="banner-icon">
+          <i
+            data-eva="checkmark-circle-outline"
+            data-eva-fill="#ffffff"
+            data-eva-height="48"
+            data-eva-width="48"
+          ></i>
+        </div>
+        <div class="banner-message"></div>
+        <div class="banner-close" onclick="hideBanners()">
+          <i data-eva="close-outline" data-eva-fill="#ffffff"></i>
+        </div>
+      </div>
+
+      <div class="left">
+        <div class="title">
+          <h1>
+            Let's Play <br />
+            the Tic-Tac-Toe <br />
+            Game !
+          </h1>
+
+          <div class="restart">Start A New Game</div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="game">
+          <div class="header">
+            <div class="playerX">
+              <span>Player X</span>
+            </div>
+            <div class="playerO">
+              <span>Player O</span>
+            </div>
+          </div>
+
+          <div class="board">
+            <div class="board-tile" data-index="0"></div>
+            <div class="board-tile" data-index="1"></div>
+            <div class="board-tile" data-index="2"></div>
+            <div class="board-tile" data-index="3"></div>
+            <div class="board-tile" data-index="4"></div>
+            <div class="board-tile" data-index="5"></div>
+            <div class="board-tile" data-index="6"></div>
+            <div class="board-tile" data-index="7"></div>
+            <div class="board-tile" data-index="8"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
