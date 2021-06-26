@@ -151,16 +151,6 @@ h1 {
   border-bottom: 3px solid rgba(137, 163, 189, 0.58);
 }
 
-@media screen and (max-width: 981px) {
-  .wrapper {
-    flex-direction: column;
-  }
-
-  .left {
-    margin-bottom: 30px;
-  }
-}
-
 .banners-container {
   position: fixed;
   top: 0;
@@ -250,4 +240,18 @@ h1 {
 .winner-text {
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 981px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .left {
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    margin-top: 50px;
+  }
 }
